@@ -30,8 +30,9 @@ def run_script(script_name):
     command = f"sudo python3 -u {script_name}"
     process = subprocess.Popen(command, shell=True)
     process.wait()
-This function takes a  `script_name`  parameter and runs the script using the  `subprocess.Popen()`  method. It constructs a command string by appending the  `script_name`  to the "sudo python3 -u" command. Then, it creates a subprocess using  `subprocess.Popen()`  and waits for it to complete using  `process.wait()` .
 ```
+This function takes a  `script_name`  parameter and runs the script using the  `subprocess.Popen()`  method. It constructs a command string by appending the  `script_name`  to the "sudo python3 -u" command. Then, it creates a subprocess using  `subprocess.Popen()`  and waits for it to complete using  `process.wait()` .
+
 
 4. Use the functions to run a script:
 ```python
